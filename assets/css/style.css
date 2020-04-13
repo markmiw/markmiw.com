@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 
+
 #header h2 span {
   color: #fff;
   border-bottom: 2px solid #18d26e;
@@ -524,9 +525,9 @@ section .container {
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 18px;
+  font-size: 36px;
   font-weight: bold;
-  margin: 10px 0 5px 45px;
+  margin: 20px 0 5px 30px;
   color: #fff;
 }
 
