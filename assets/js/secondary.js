@@ -9,7 +9,7 @@
 
   // Nav Menu
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
       var hash = this.hash;
       var target = $(hash);
       if (target.length) {
@@ -50,8 +50,7 @@
         return false;
 
       }
-    }
-  });
+    });
 
   // Mobile Navigation
   if ($('.nav-menu').length) {
@@ -62,7 +61,7 @@
     $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
-    $(document).on('click', '.mobile-nav-toggle', function(e) {
+    $(document).ready('click', '.mobile-nav-toggle', function(e) {
       $('body').toggleClass('mobile-nav-active');
       $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
       $('.mobile-nav-overly').toggle();

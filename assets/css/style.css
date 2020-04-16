@@ -343,7 +343,7 @@ section .container {
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -595,62 +595,41 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #18d26e;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.15);
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
+/* Header Top */
+.resume .header-top {
+  height: 80px;
+  position: fixed;
+  left: 0;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.resume .header-top .social-links, .resume header.header-top h2 {
+  display: none;
+}
+
+.resume .header-top h1 {
+  margin-right: auto;
+  font-size: 36px;
+}
+
+.resume .header-top .container {
+  display: flex;
+  align-items: center;
+}
+
+.resume .header-top .nav-menu {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .resume .header-top {
+    height: 60px;
+  }
+  .resume .header-top h1 {
+    font-size: 26px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -732,6 +711,32 @@ section .container {
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #fff;
 }
+
+.services h5 {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 26px;
+  color: #18d26e;
+}
+
+.services h6 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.services .info-box {
+  color: #444444;
+  padding: 5px;
+  margin-top: 50px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.services h1 {
+  margin-top: 300px;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1068,6 +1073,44 @@ section .container {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+/* Undergrad Top */
+#undergrad.header-top {
+  height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#undergrad.header-top .social-links, #undergrad.header-top h2 {
+  display: none;
+}
+
+#undergrad.header-top h1 {
+  margin-right: auto;
+  font-size: 36px;
+}
+
+#undergrad.header-top .container {
+  display: flex;
+  align-items: center;
+}
+
+#undergrad.header-top .nav-menu {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #undergrad.header-top {
+    height: 60px;
+  }
+  #undergrad.header-top h1 {
+    font-size: 26px;
   }
 }
 
