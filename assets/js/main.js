@@ -16,7 +16,7 @@
         e.preventDefault();
 
         $('html, body').animate({
-          scrollTop: (target.offset().top -150)
+          scrollTop: (target.offset().top -125)
           },0);
           
         if ($(this).parents('.nav-menu, .mobile-nav').length) {
@@ -29,6 +29,7 @@
           $("section").removeClass('section-show');
           return;
         }
+
 
         if (!$('#header').hasClass('header-top')) {
           $('#header').addClass('header-top');
@@ -162,3 +163,7 @@ window.onclick = function(event) {
   }
 }
 
+$("#undergrad").click(function(e){
+  /* some statements */
+  e.preventDefault();
+});
