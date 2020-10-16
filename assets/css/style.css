@@ -1195,3 +1195,11 @@ section .container {
   text-decoration: none;
   cursor: pointer;
 }
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
